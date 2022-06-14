@@ -12,20 +12,20 @@ public class HumanReadableTime {
     String horas = Integer.toString((seconds / unaHoraEnSegundos));
     //Para sacar los minutos, sacamos el resto de dividir los segundos entre unaHoraEnSegundos y lo divimos entre 
     //unMinutoEnSegundos
-		String minutos = Integer.toString((seconds % unaHoraEnSegundos) / unMinutoEnSegundos);
+    String minutos = Integer.toString((seconds % unaHoraEnSegundos) / unMinutoEnSegundos);
     //Y para los segundos, simplemente es el resto de dividir los segundos entre 60 (unMinutoEnSegundos)
-		String segundos = Integer.toString(seconds % unMinutoEnSegundos);
+    String segundos = Integer.toString(seconds % unMinutoEnSegundos);
     
     //Como nos estan pidiendo que sean 2 digitos, controlamos que si solo es 1, añadimos un 0 delante
     if (horas.length() == 1) {
-			horas = "0" + horas;
-		}
-		if (minutos.length() == 1) {
-			minutos = "0" + minutos;
-		}
-		if (segundos.length() == 1) {
-			segundos = "0" + segundos;
-		}
+	horas = "0" + horas;
+    }
+    if (minutos.length() == 1) {
+	minutos = "0" + minutos;
+    }
+    if (segundos.length() == 1) {
+	segundos = "0" + segundos;
+    }
     
     return horas + ":" + minutos + ":" + segundos;
   }
