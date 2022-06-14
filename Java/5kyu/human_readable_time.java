@@ -6,7 +6,7 @@ public class HumanReadableTime {
     
     //Declaramos una hora y un minueto en segundos:
     int unaHoraEnSegundos = 3600;
-		int unMinutoEnSegundos = 60;
+    int unMinutoEnSegundos = 60;
     
     //Dividmos los segundos entre unaHoraEnSegundos para sacar las horas
     String horas = Integer.toString((seconds / unaHoraEnSegundos));
